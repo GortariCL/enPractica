@@ -11,7 +11,7 @@ let suma = () => {
 
     let sum = (parseInt(num1) + parseInt(num2));
 
-    document.getElementById('resultado').innerHTML = sum;
+    resultado.innerHTML = sum;
 }
 
 btnSuma.addEventListener("click", suma);
@@ -26,9 +26,9 @@ let resta = () => {
     let res = (parseInt(num1) - parseInt(num2));
 
     if(res < 0){
-        document.getElementById('resultado').innerHTML = 0;
+        resultado.innerHTML = 0;
     }else{
-        document.getElementById('resultado').innerHTML = res;
+        resultado.innerHTML = res;
     }
 }
 
