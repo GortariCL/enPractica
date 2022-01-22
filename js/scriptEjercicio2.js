@@ -1,2 +1,0 @@
-//EJERCICIO 2
-
