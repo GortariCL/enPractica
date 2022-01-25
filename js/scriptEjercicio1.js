@@ -1,5 +1,7 @@
+//Obtención datos de formulario
 let form = document.getElementById("formulario");
 
+//Función principal del formulario
 form.addEventListener("submit", function (e){
     e.preventDefault();
     errorClean();
@@ -14,16 +16,19 @@ form.addEventListener("submit", function (e){
 
 });
 
+//Limpieza de los avisos de error en campos no llenados
 let errorClean = () => {
     document.querySelector(".errorNombre").innerHTML = "";
     document.querySelector(".errorAsunto").innerHTML = "";
     document.querySelector(".errorMensaje").innerHTML = "";
-};
+}; 
 
+//Función de mensaje enviado con éxito
 let success = () => {
     document.querySelector(".resultado").innerHTML = "Mensaje enviado con éxito";
 };
 
+//Validación de los campos mediante expresiones regulares
 let validate = (textName,textSubject,textMessage) => {
     
     let validatePass = true;
