@@ -8,49 +8,19 @@ let btnPurple = document.getElementById("btn-6");
 let box = document.getElementById("caja");
 
 //Función cambio de color con btn1
-let changeColorBtn1 = () =>{
-    if(btnRed.value == "red"){
-        box.style.background = btnRed.value;
-        console.log(btnRed);
-    };
-};
+let changeColorBtn1 = () => box.style.backgroundColor = btnRed.style.backgroundColor;
 
 //Función cambio de color con btn2
-let changeColorBtn2 = () =>{
-    if(btnOrange.value == "orange"){
-        box.style.background = btnOrange.value;
-        console.log(btnOrange);
-    };
-};
+let changeColorBtn2 = () => box.style.backgroundColor = btnOrange.style.backgroundColor;
 
 //Función cambio de color con btn3
-let changeColorBtn3 = () =>{
-    if(btnYellow.value == "yellow"){
-        box.style.background = btnYellow.value;
-        console.log(btnYellow);
-    };
-};
+let changeColorBtn3 = () => box.style.backgroundColor = btnYellow.style.backgroundColor;
 
 //Función cambio de color con btn4
-let changeColorBtn4 = () =>{
-    if(btnGreen.value == "green"){
-        box.style.background = btnGreen.value;
-        console.log(btnGreen);
-    };
-};
+let changeColorBtn4 = () => box.style.backgroundColor = btnGreen.style.backgroundColor;
 
 //Función cambio de color con btn5
-let changeColorBtn5 = () =>{
-    if(btnAqua.value == "aqua"){
-        box.style.background = btnAqua.value;
-        console.log(btnAqua);
-    };
-};
+let changeColorBtn5 = () => box.style.backgroundColor = btnAqua.style.backgroundColor;
 
 //Función cambio de color con btn6
-let changeColorBtn6 = () =>{
-    if(btnPurple.value == "purple"){
-        box.style.background = btnPurple.value;
-        console.log(btnPurple);
-    };
-};
+let changeColorBtn6 = () => box.style.backgroundColor = btnPurple.style.backgroundColor;

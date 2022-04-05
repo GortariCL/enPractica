@@ -32,15 +32,14 @@ let success = () => {
 let validate = (textName,textSubject,textMessage) => {
     
     let validatePass = true;
-    let nameValidate = /[a-zA-Z]/gim;
+    let nameValidate = /^[a-zA-ZÀ-ÿ\s]{1,100}$/;
 
     if(nameValidate.test(textName) == false) {
         document.querySelector(".errorNombre").innerHTML = "El nombre es requerido.";
-
         validatePass = false;
     };
 
-    let subjectValidate = /[a-zA-Z0-9]/gim;
+    let subjectValidate = /[a-zA-ZÀ-ÿ0-9\s]{1,100}$/;
 
     if(subjectValidate.test(textSubject) == false) {
         document.querySelector(".errorAsunto").innerHTML = "El asunto es requerido.";
@@ -48,7 +47,7 @@ let validate = (textName,textSubject,textMessage) => {
         validatePass = false;
     };
 
-    let messageValidate = /[a-zA-Z0-9]/gim;
+    let messageValidate = /[a-zA-ZÀ-ÿ0-9\s]{1,1000}$/;
 
     if(messageValidate.test(textMessage) == false) {
 
